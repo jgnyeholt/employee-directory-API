@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 4em;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  color: #4a4a4a;
+}
+
+#grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  grid-template-rows: auto;
+  grid-row-gap: 1.5em;
+}
+
+.card {
+  border: 2px solid #dfdfdf;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+.card img {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+.card h2 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-size: 1.1em;
+  color: #4a4a4a;
+  text-transform: capitalize;
+}
+.card a {
+  text-decoration: none;
+}
+.card a, .card p {
+  margin: 0.25em 0;
+  font-size: 0.9em;
+  color: #979c9f;
+}
+
+/*# sourceMappingURL=styles.css.map */
