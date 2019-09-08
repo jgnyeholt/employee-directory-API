@@ -6,12 +6,23 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Awesome Startup Employee Directory</h1>
+    <div class="header">
+      <h1>Awesome Startup Employee Directory</h1>
+      <input id="filter" type="text" placeholder="Filter Employees">
+    </div>
     <div id="grid">
       <!-- Images provided through API -->
-
+    </div>
+    <div id="modal-background">
+      <div id="modal">
+        <p id="close"><i class="fa fa-times" aria-hidden="true"></i></p>
+        <p id="previousPerson"><i class="fa fa-chevron-left" aria-hidden="true"></i></p>
+        <p id="nextPerson"><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+        <!-- Content provided through API -->
+      </div>
     </div>
     <script src="js/api.js"></script>
   </body>
