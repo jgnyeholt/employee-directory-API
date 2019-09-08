@@ -4,14 +4,12 @@ const url = "https://randomuser.me/api/?results=12&nat=US";
 const grid = document.getElementById("grid");
 const gridCards = document.getElementsByClassName("card");
 const modalBackground = document.getElementById("modal-background");
-const body = document.querySelector("body");
 const heading = document.querySelector("h1");
 
 //popup selectors
 const modal = document.getElementById("modal");
 const next = document.getElementById("nextPerson");
 const previous = document.getElementById("previousPerson");
-const personIndex = document.getElementById("personIndex");
 const close = document.getElementById("close");
 
 //Filter
@@ -140,11 +138,9 @@ function previousProfileListener(){
     modal.removeChild(modal.lastChild);
     if(tempIndex === 0){
       tempIndex = currentCards.length - 1;
-      console.log("tempIndex = " + tempIndex);
     }
     else {
       tempIndex--;
-      console.log("tempIndex = " + tempIndex);
     }
 
     let x = allCards.indexOf(currentCards[tempIndex]);
